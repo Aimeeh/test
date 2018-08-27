@@ -1,0 +1,645 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WaterManageModelStoreContainer" CdmEntityContainer="DBContext">
+    <EntitySetMapping Name="B_UserRoleRelation">
+      <EntityTypeMapping TypeName="WaterManageModel.B_UserRoleRelation">
+        <MappingFragment StoreEntitySet="B_UserRoleRelation">
+          <ScalarProperty Name="ObjectUserRelationId" ColumnName="ObjectUserRelationId" />
+          <ScalarProperty Name="ObjectId" ColumnName="ObjectId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="SortCode" ColumnName="SortCode" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateUserId" ColumnName="CreateUserId" />
+          <ScalarProperty Name="CreateUserName" ColumnName="CreateUserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Base_Module">
+      <EntityTypeMapping TypeName="WaterManageModel.Base_Module">
+        <MappingFragment StoreEntitySet="Base_Module">
+          <ScalarProperty Name="ModuleId" ColumnName="ModuleId" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Icon" ColumnName="Icon" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="Target" ColumnName="Target" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Isexpand" ColumnName="Isexpand" />
+          <ScalarProperty Name="AllowButton" ColumnName="AllowButton" />
+          <ScalarProperty Name="AllowView" ColumnName="AllowView" />
+          <ScalarProperty Name="AllowForm" ColumnName="AllowForm" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="DataScope" ColumnName="DataScope" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="SortCode" ColumnName="SortCode" />
+          <ScalarProperty Name="DeleteMark" ColumnName="DeleteMark" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateUserId" ColumnName="CreateUserId" />
+          <ScalarProperty Name="CreateUserName" ColumnName="CreateUserName" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="ModifyUserId" ColumnName="ModifyUserId" />
+          <ScalarProperty Name="ModifyUserName" ColumnName="ModifyUserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Base_ProvinceCity">
+      <EntityTypeMapping TypeName="WaterManageModel.Base_ProvinceCity">
+        <MappingFragment StoreEntitySet="Base_ProvinceCity">
+          <ScalarProperty Name="ProvinceCityId" ColumnName="ProvinceCityId" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="SortCode" ColumnName="SortCode" />
+          <ScalarProperty Name="DeleteMark" ColumnName="DeleteMark" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateUserId" ColumnName="CreateUserId" />
+          <ScalarProperty Name="CreateUserName" ColumnName="CreateUserName" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="ModifyUserId" ColumnName="ModifyUserId" />
+          <ScalarProperty Name="ModifyUserName" ColumnName="ModifyUserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CityInfo">
+      <EntityTypeMapping TypeName="WaterManageModel.CityInfo">
+        <MappingFragment StoreEntitySet="CityInfo">
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="ProID" ColumnName="ProID" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="xPos" ColumnName="xPos" />
+          <ScalarProperty Name="yPos" ColumnName="yPos" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ConfigParameter">
+      <EntityTypeMapping TypeName="WaterManageModel.ConfigParameter">
+        <MappingFragment StoreEntitySet="ConfigParameter">
+          <ScalarProperty Name="CPId" ColumnName="CPId" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="Origin" ColumnName="Origin" />
+          <ScalarProperty Name="SoundverCount" ColumnName="SoundverCount" />
+          <ScalarProperty Name="HSpeedverCount" ColumnName="HSpeedverCount" />
+          <ScalarProperty Name="MSpeedverCount" ColumnName="MSpeedverCount" />
+          <ScalarProperty Name="LSpeedverCount" ColumnName="LSpeedverCount" />
+          <ScalarProperty Name="LeftDistance" ColumnName="LeftDistance" />
+          <ScalarProperty Name="RightDistance" ColumnName="RightDistance" />
+          <ScalarProperty Name="LLeftCft" ColumnName="LLeftCft" />
+          <ScalarProperty Name="MLeftCft" ColumnName="MLeftCft" />
+          <ScalarProperty Name="HLeftCft" ColumnName="HLeftCft" />
+          <ScalarProperty Name="LRightCft" ColumnName="LRightCft" />
+          <ScalarProperty Name="MRightCft" ColumnName="MRightCft" />
+          <ScalarProperty Name="HRightCft" ColumnName="HRightCft" />
+          <ScalarProperty Name="BottomElevWaterGau" ColumnName="BottomElevWaterGau" />
+          <ScalarProperty Name="TopElevWaterGau" ColumnName="TopElevWaterGau" />
+          <ScalarProperty Name="RiverBottEle" ColumnName="RiverBottEle" />
+          <ScalarProperty Name="GasgaugeParameter1" ColumnName="GasgaugeParameter1" />
+          <ScalarProperty Name="GasgaugeParameter2" ColumnName="GasgaugeParameter2" />
+          <ScalarProperty Name="FloatgaugeParameter1" ColumnName="FloatgaugeParameter1" />
+          <ScalarProperty Name="FloatgaugeParameter2" ColumnName="FloatgaugeParameter2" />
+          <ScalarProperty Name="RopewayLength" ColumnName="RopewayLength" />
+          <ScalarProperty Name="StartDistance" ColumnName="StartDistance" />
+          <ScalarProperty Name="LargeSecDepth" ColumnName="LargeSecDepth" />
+          <ScalarProperty Name="BaseWaterLevel" ColumnName="BaseWaterLevel" />
+          <ScalarProperty Name="StopWaterLev" ColumnName="StopWaterLev" />
+          <ScalarProperty Name="StopTemperature" ColumnName="StopTemperature" />
+          <ScalarProperty Name="WarnWaterValue" ColumnName="WarnWaterValue" />
+          <ScalarProperty Name="WarnFlowValue" ColumnName="WarnFlowValue" />
+          <ScalarProperty Name="WarnVelValue" ColumnName="WarnVelValue" />
+          <ScalarProperty Name="SentState" ColumnName="SentState" />
+          <ScalarProperty Name="RevTime" ColumnName="RevTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CorrectionFactor">
+      <EntityTypeMapping TypeName="WaterManageModel.CorrectionFactor">
+        <MappingFragment StoreEntitySet="CorrectionFactor">
+          <ScalarProperty Name="CFId" ColumnName="CFId" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="RainCorrFactorA" ColumnName="RainCorrFactorA" />
+          <ScalarProperty Name="RainCorrFactorB" ColumnName="RainCorrFactorB" />
+          <ScalarProperty Name="SediCorrFactorA" ColumnName="SediCorrFactorA" />
+          <ScalarProperty Name="SediCorrFactorB" ColumnName="SediCorrFactorB" />
+          <ScalarProperty Name="evaUpperlimit" ColumnName="evaUpperlimit" />
+          <ScalarProperty Name="evaLowerlimit" ColumnName="evaLowerlimit" />
+          <ScalarProperty Name="WStartTime" ColumnName="WStartTime" />
+          <ScalarProperty Name="WEndTime" ColumnName="WEndTime" />
+          <ScalarProperty Name="EvaMiddValue" ColumnName="EvaMiddValue" />
+          <ScalarProperty Name="EvaWeight" ColumnName="EvaWeight" />
+          <ScalarProperty Name="LTempLimit" ColumnName="LTempLimit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CountryInfo">
+      <EntityTypeMapping TypeName="WaterManageModel.CountryInfo">
+        <MappingFragment StoreEntitySet="CountryInfo">
+          <ScalarProperty Name="CouID" ColumnName="CouID" />
+          <ScalarProperty Name="CouName" ColumnName="CouName" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="xPos" ColumnName="xPos" />
+          <ScalarProperty Name="yPos" ColumnName="yPos" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EvaporationData">
+      <EntityTypeMapping TypeName="WaterManageModel.EvaporationData">
+        <MappingFragment StoreEntitySet="EvaporationData">
+          <ScalarProperty Name="EvaId" ColumnName="EvaId" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="EvaData" ColumnName="EvaData" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="ReceiveTime" ColumnName="ReceiveTime" />
+          <ScalarProperty Name="TestTime" ColumnName="TestTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FlowParArea">
+      <EntityTypeMapping TypeName="WaterManageModel.FlowParArea">
+        <MappingFragment StoreEntitySet="FlowParArea">
+          <ScalarProperty Name="FpaId" ColumnName="FpaId" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="FlowData" ColumnName="FlowData" />
+          <ScalarProperty Name="PartArea" ColumnName="PartArea" />
+          <ScalarProperty Name="CorrFactor" ColumnName="CorrFactor" />
+          <ScalarProperty Name="FTId" ColumnName="FTId" />
+          <ScalarProperty Name="RevTime" ColumnName="RevTime" />
+          <ScalarProperty Name="PartDepth" ColumnName="PartDepth" />
+          <ScalarProperty Name="PMeanDepth" ColumnName="PMeanDepth" />
+          <ScalarProperty Name="PartVelocity" ColumnName="PartVelocity" />
+          <ScalarProperty Name="PMeanVelocity" ColumnName="PMeanVelocity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FlowTable">
+      <EntityTypeMapping TypeName="WaterManageModel.FlowTable">
+        <MappingFragment StoreEntitySet="FlowTable">
+          <ScalarProperty Name="FTId" ColumnName="FTId" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="FTestStartTime" ColumnName="FTestStartTime" />
+          <ScalarProperty Name="FTestEndTime" ColumnName="FTestEndTime" />
+          <ScalarProperty Name="StartwaterLev" ColumnName="StartwaterLev" />
+          <ScalarProperty Name="EndwaterLev" ColumnName="EndwaterLev" />
+          <ScalarProperty Name="WaterWidth" ColumnName="WaterWidth" />
+          <ScalarProperty Name="FlowValue" ColumnName="FlowValue" />
+          <ScalarProperty Name="WaterModel" ColumnName="WaterModel" />
+          <ScalarProperty Name="SpeedverCount" ColumnName="SpeedverCount" />
+          <ScalarProperty Name="SecArea" ColumnName="SecArea" />
+          <ScalarProperty Name="MeanDepth" ColumnName="MeanDepth" />
+          <ScalarProperty Name="MaxDepth" ColumnName="MaxDepth" />
+          <ScalarProperty Name="MeanVelocity" ColumnName="MeanVelocity" />
+          <ScalarProperty Name="MaxVelocity" ColumnName="MaxVelocity" />
+          <ScalarProperty Name="CPId" ColumnName="CPId" />
+          <ScalarProperty Name="RevTime" ColumnName="RevTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HandleLog">
+      <EntityTypeMapping TypeName="WaterManageModel.HandleLog">
+        <MappingFragment StoreEntitySet="HandleLog">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="StationId" ColumnName="StationId" />
+          <ScalarProperty Name="Account" ColumnName="Account" />
+          <ScalarProperty Name="LogContent" ColumnName="LogContent" />
+          <ScalarProperty Name="HandleTime" ColumnName="HandleTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hydStation">
+      <EntityTypeMapping TypeName="WaterManageModel.hydStation">
+        <MappingFragment StoreEntitySet="hydStation">
+          <ScalarProperty Name="SID" ColumnName="SID" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="StationName" ColumnName="StationName" />
+          <ScalarProperty Name="StationType" ColumnName="StationType" />
+          <ScalarProperty Name="CouID" ColumnName="CouID" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="RiverWay" ColumnName="RiverWay" />
+          <ScalarProperty Name="Basin" ColumnName="Basin" />
+          <ScalarProperty Name="Voltage" ColumnName="Voltage" />
+          <ScalarProperty Name="RTUVoltage" ColumnName="RTUVoltage" />
+          <ScalarProperty Name="RTUVoltage2" ColumnName="RTUVoltage2" />
+          <ScalarProperty Name="AddTime" ColumnName="AddTime" />
+          <ScalarProperty Name="Onlinestate" ColumnName="Onlinestate" />
+          <ScalarProperty Name="OnlineTime" ColumnName="OnlineTime" />
+          <ScalarProperty Name="Province" ColumnName="Province" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="CountyId" ColumnName="CountyId" />
+          <ScalarProperty Name="County" ColumnName="County" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateUserId" ColumnName="CreateUserId" />
+          <ScalarProperty Name="CreateUserName" ColumnName="CreateUserName" />
+          <ScalarProperty Name="ProvinceId" ColumnName="ProvinceId" />
+          <ScalarProperty Name="DeleteMark" ColumnName="DeleteMark" />
+          <ScalarProperty Name="KCode" ColumnName="KCode" />
+          <ScalarProperty Name="StationID_Code" ColumnName="StationID_Code" />
+          <ScalarProperty Name="WarnPhoneNum" ColumnName="WarnPhoneNum" />
+          <ScalarProperty Name="DeviceType" ColumnName="DeviceType" />
+          <ScalarProperty Name="C_DeviceType" ColumnName="_DeviceType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ManualTestTable">
+      <EntityTypeMapping TypeName="WaterManageModel.ManualTestTable">
+        <MappingFragment StoreEntitySet="ManualTestTable">
+          <ScalarProperty Name="MTId" ColumnName="MTId" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="MTTestTime" ColumnName="MTTestTime" />
+          <ScalarProperty Name="WaterLevalue" ColumnName="WaterLevalue" />
+          <ScalarProperty Name="Flow" ColumnName="Flow" />
+          <ScalarProperty Name="DataType" ColumnName="DataType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ManVelData">
+      <EntityTypeMapping TypeName="WaterManageModel.ManVelData">
+        <MappingFragment StoreEntitySet="ManVelData">
+          <ScalarProperty Name="MvdId" ColumnName="MvdId" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="DataOrder" ColumnName="DataOrder" />
+          <ScalarProperty Name="VerData" ColumnName="VerData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MeasuredParameter">
+      <EntityTypeMapping TypeName="WaterManageModel.MeasuredParameter">
+        <MappingFragment StoreEntitySet="MeasuredParameter">
+          <ScalarProperty Name="MPId" ColumnName="MPId" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="HWaterValue" ColumnName="HWaterValue" />
+          <ScalarProperty Name="HWaterMInterval" ColumnName="HWaterMInterval" />
+          <ScalarProperty Name="HwaterFluctMeasure" ColumnName="HwaterFluctMeasure" />
+          <ScalarProperty Name="MWaterValue" ColumnName="MWaterValue" />
+          <ScalarProperty Name="MWaterMInterval" ColumnName="MWaterMInterval" />
+          <ScalarProperty Name="MwaterFluctMeasure" ColumnName="MwaterFluctMeasure" />
+          <ScalarProperty Name="LWaterMInterval" ColumnName="LWaterMInterval" />
+          <ScalarProperty Name="LwaterFluctMeasure" ColumnName="LwaterFluctMeasure" />
+          <ScalarProperty Name="OffsetDistance" ColumnName="OffsetDistance" />
+          <ScalarProperty Name="WarnWaterValue" ColumnName="WarnWaterValue" />
+          <ScalarProperty Name="WarnFlowValue" ColumnName="WarnFlowValue" />
+          <ScalarProperty Name="WarnVelValue" ColumnName="WarnVelValue" />
+          <ScalarProperty Name="CPId" ColumnName="CPId" />
+          <ScalarProperty Name="RevTime" ColumnName="RevTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MeasureRecord">
+      <EntityTypeMapping TypeName="WaterManageModel.MeasureRecord">
+        <MappingFragment StoreEntitySet="MeasureRecord">
+          <ScalarProperty Name="MMId" ColumnName="MMId" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="MeasureMark" ColumnName="MeasureMark" />
+          <ScalarProperty Name="TypeMark" ColumnName="TypeMark" />
+          <ScalarProperty Name="ReceiveBackMark" ColumnName="ReceiveBackMark" />
+          <ScalarProperty Name="VerticalMark" ColumnName="VerticalMark" />
+          <ScalarProperty Name="SetOutMark" ColumnName="SetOutMark" />
+          <ScalarProperty Name="ReachZeroMark" ColumnName="ReachZeroMark" />
+          <ScalarProperty Name="CompletedMark" ColumnName="CompletedMark" />
+          <ScalarProperty Name="TimeOut" ColumnName="TimeOut" />
+          <ScalarProperty Name="FailMark" ColumnName="FailMark" />
+          <ScalarProperty Name="HandleAccount" ColumnName="HandleAccount" />
+          <ScalarProperty Name="VolatMark" ColumnName="VolatMark" />
+          <ScalarProperty Name="DataContent" ColumnName="DataContent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MinuFlowRate">
+      <EntityTypeMapping TypeName="WaterManageModel.MinuFlowRate">
+        <MappingFragment StoreEntitySet="MinuFlowRate">
+          <ScalarProperty Name="MFRId" ColumnName="MFRId" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="FlowRateData" ColumnName="FlowRateData" />
+          <ScalarProperty Name="Voltage" ColumnName="Voltage" />
+          <ScalarProperty Name="Discharge" ColumnName="Discharge" />
+          <ScalarProperty Name="RecTime" ColumnName="RecTime" />
+          <ScalarProperty Name="TestTime" ColumnName="TestTime" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="CarVoltage" ColumnName="CarVoltage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OriginalData">
+      <EntityTypeMapping TypeName="WaterManageModel.OriginalData">
+        <MappingFragment StoreEntitySet="OriginalData">
+          <ScalarProperty Name="OId" ColumnName="OId" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="ReceiveTime" ColumnName="ReceiveTime" />
+          <ScalarProperty Name="TransType" ColumnName="TransType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProvinceInfo">
+      <EntityTypeMapping TypeName="WaterManageModel.ProvinceInfo">
+        <MappingFragment StoreEntitySet="ProvinceInfo">
+          <ScalarProperty Name="ProID" ColumnName="ProID" />
+          <ScalarProperty Name="ProName" ColumnName="ProName" />
+          <ScalarProperty Name="Longitute" ColumnName="Longitute" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="xPos" ColumnName="xPos" />
+          <ScalarProperty Name="yPos" ColumnName="yPos" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RadRainfalldata">
+      <EntityTypeMapping TypeName="WaterManageModel.RadRainfalldata">
+        <MappingFragment StoreEntitySet="RadRainfalldata">
+          <ScalarProperty Name="RRId" ColumnName="RRId" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="RRTestTime" ColumnName="RRTestTime" />
+          <ScalarProperty Name="RRData1" ColumnName="RRData1" />
+          <ScalarProperty Name="RRData3" ColumnName="RRData3" />
+          <ScalarProperty Name="RRData2" ColumnName="RRData2" />
+          <ScalarProperty Name="RRData4" ColumnName="RRData4" />
+          <ScalarProperty Name="RRData5" ColumnName="RRData5" />
+          <ScalarProperty Name="RRData6" ColumnName="RRData6" />
+          <ScalarProperty Name="RRData7" ColumnName="RRData7" />
+          <ScalarProperty Name="RRData8" ColumnName="RRData8" />
+          <ScalarProperty Name="RRData9" ColumnName="RRData9" />
+          <ScalarProperty Name="RRData10" ColumnName="RRData10" />
+          <ScalarProperty Name="RRData11" ColumnName="RRData11" />
+          <ScalarProperty Name="RRData12" ColumnName="RRData12" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RainfallData">
+      <EntityTypeMapping TypeName="WaterManageModel.RainfallData">
+        <MappingFragment StoreEntitySet="RainfallData">
+          <ScalarProperty Name="RId" ColumnName="RId" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="RainfallData1" ColumnName="RainfallData1" />
+          <ScalarProperty Name="RainfallData2" ColumnName="RainfallData2" />
+          <ScalarProperty Name="RainfallData3" ColumnName="RainfallData3" />
+          <ScalarProperty Name="RainfallData4" ColumnName="RainfallData4" />
+          <ScalarProperty Name="RainfallData5" ColumnName="RainfallData5" />
+          <ScalarProperty Name="RainfallData6" ColumnName="RainfallData6" />
+          <ScalarProperty Name="RainfallData7" ColumnName="RainfallData7" />
+          <ScalarProperty Name="RainfallData8" ColumnName="RainfallData8" />
+          <ScalarProperty Name="RainfallData9" ColumnName="RainfallData9" />
+          <ScalarProperty Name="RainfallData10" ColumnName="RainfallData10" />
+          <ScalarProperty Name="RainfallData11" ColumnName="RainfallData11" />
+          <ScalarProperty Name="RainfallData12" ColumnName="RainfallData12" />
+          <ScalarProperty Name="TotalRain" ColumnName="TotalRain" />
+          <ScalarProperty Name="Temperature" ColumnName="Temperature" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="PacketType" ColumnName="PacketType" />
+          <ScalarProperty Name="ReceiveTime" ColumnName="ReceiveTime" />
+          <ScalarProperty Name="TestTime" ColumnName="TestTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RTUTestPlan">
+      <EntityTypeMapping TypeName="WaterManageModel.RTUTestPlan">
+        <MappingFragment StoreEntitySet="RTUTestPlan">
+          <ScalarProperty Name="TPId" ColumnName="TPId" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="LWTestPlan" ColumnName="LWTestPlan" />
+          <ScalarProperty Name="MWTestPlan" ColumnName="MWTestPlan" />
+          <ScalarProperty Name="HWTestPlan" ColumnName="HWTestPlan" />
+          <ScalarProperty Name="CPId" ColumnName="CPId" />
+          <ScalarProperty Name="SendState" ColumnName="SendState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SedimentData">
+      <EntityTypeMapping TypeName="WaterManageModel.SedimentData">
+        <MappingFragment StoreEntitySet="SedimentData">
+          <ScalarProperty Name="SeId" ColumnName="SeId" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="SedimentData1" ColumnName="SedimentData1" />
+          <ScalarProperty Name="SedimentData2" ColumnName="SedimentData2" />
+          <ScalarProperty Name="SedimentData3" ColumnName="SedimentData3" />
+          <ScalarProperty Name="SedimentData4" ColumnName="SedimentData4" />
+          <ScalarProperty Name="SedimentData5" ColumnName="SedimentData5" />
+          <ScalarProperty Name="SedimentData6" ColumnName="SedimentData6" />
+          <ScalarProperty Name="SedimentData7" ColumnName="SedimentData7" />
+          <ScalarProperty Name="SedimentData8" ColumnName="SedimentData8" />
+          <ScalarProperty Name="SedimentData9" ColumnName="SedimentData9" />
+          <ScalarProperty Name="SedimentData10" ColumnName="SedimentData10" />
+          <ScalarProperty Name="SedimentData11" ColumnName="SedimentData11" />
+          <ScalarProperty Name="SedimentData12" ColumnName="SedimentData12" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="PacketType" ColumnName="PacketType" />
+          <ScalarProperty Name="ReceiveTime" ColumnName="ReceiveTime" />
+          <ScalarProperty Name="TestTime" ColumnName="TestTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SoundverData">
+      <EntityTypeMapping TypeName="WaterManageModel.SoundverData">
+        <MappingFragment StoreEntitySet="SoundverData">
+          <ScalarProperty Name="SvdId" ColumnName="SvdId" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="DataOrder" ColumnName="DataOrder" />
+          <ScalarProperty Name="StartDistL" ColumnName="StartDistL" />
+          <ScalarProperty Name="VerData" ColumnName="VerData" />
+          <ScalarProperty Name="CPId" ColumnName="CPId" />
+          <ScalarProperty Name="RevTime" ColumnName="RevTime" />
+          <ScalarProperty Name="TestRecord" ColumnName="TestRecord" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SpeedData">
+      <EntityTypeMapping TypeName="WaterManageModel.SpeedData">
+        <MappingFragment StoreEntitySet="SpeedData">
+          <ScalarProperty Name="SdId" ColumnName="SdId" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="DataOrder" ColumnName="DataOrder" />
+          <ScalarProperty Name="StartDistV" ColumnName="StartDistV" />
+          <ScalarProperty Name="RiverElva" ColumnName="RiverElva" />
+          <ScalarProperty Name="CorrecFactor" ColumnName="CorrecFactor" />
+          <ScalarProperty Name="HCoeff" ColumnName="HCoeff" />
+          <ScalarProperty Name="MCoeff" ColumnName="MCoeff" />
+          <ScalarProperty Name="LCoeff" ColumnName="LCoeff" />
+          <ScalarProperty Name="HCoeffA" ColumnName="HCoeffA" />
+          <ScalarProperty Name="HCoeffB" ColumnName="HCoeffB" />
+          <ScalarProperty Name="MCoeffA" ColumnName="MCoeffA" />
+          <ScalarProperty Name="MCoeffB" ColumnName="MCoeffB" />
+          <ScalarProperty Name="LCoeffA" ColumnName="LCoeffA" />
+          <ScalarProperty Name="LCoeffB" ColumnName="LCoeffB" />
+          <ScalarProperty Name="DataType" ColumnName="DataType" />
+          <ScalarProperty Name="CPId" ColumnName="CPId" />
+          <ScalarProperty Name="RevTime" ColumnName="RevTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UpdateRecord">
+      <EntityTypeMapping TypeName="WaterManageModel.UpdateRecord">
+        <MappingFragment StoreEntitySet="UpdateRecord">
+          <ScalarProperty Name="UDId" ColumnName="UDId" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="StationName" ColumnName="StationName" />
+          <ScalarProperty Name="UpdateMark" ColumnName="UpdateMark" />
+          <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+          <ScalarProperty Name="FilePathB" ColumnName="FilePathB" />
+          <ScalarProperty Name="ResponseMark" ColumnName="ResponseMark" />
+          <ScalarProperty Name="CompletedMark" ColumnName="CompletedMark" />
+          <ScalarProperty Name="Argement" ColumnName="Argement" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="TypeMark" ColumnName="TypeMark" />
+          <ScalarProperty Name="DeviceType" ColumnName="DeviceType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WaterLevData">
+      <EntityTypeMapping TypeName="WaterManageModel.WaterLevData">
+        <MappingFragment StoreEntitySet="WaterLevData">
+          <ScalarProperty Name="WLId" ColumnName="WLId" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="TestTime" ColumnName="TestTime" />
+          <ScalarProperty Name="WLData1" ColumnName="WLData1" />
+          <ScalarProperty Name="WLData2" ColumnName="WLData2" />
+          <ScalarProperty Name="WLData3" ColumnName="WLData3" />
+          <ScalarProperty Name="WLData4" ColumnName="WLData4" />
+          <ScalarProperty Name="WLData5" ColumnName="WLData5" />
+          <ScalarProperty Name="WLData6" ColumnName="WLData6" />
+          <ScalarProperty Name="WLData7" ColumnName="WLData7" />
+          <ScalarProperty Name="WLData8" ColumnName="WLData8" />
+          <ScalarProperty Name="WLData9" ColumnName="WLData9" />
+          <ScalarProperty Name="WLData10" ColumnName="WLData10" />
+          <ScalarProperty Name="WLData11" ColumnName="WLData11" />
+          <ScalarProperty Name="WLData12" ColumnName="WLData12" />
+          <ScalarProperty Name="TotalData" ColumnName="TotalData" />
+          <ScalarProperty Name="DataType" ColumnName="DataType" />
+          <ScalarProperty Name="RevTime" ColumnName="RevTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WM_Area">
+      <EntityTypeMapping TypeName="WaterManageModel.WM_Area">
+        <MappingFragment StoreEntitySet="WM_Area">
+          <ScalarProperty Name="AreaID" ColumnName="AreaID" />
+          <ScalarProperty Name="AreaName" ColumnName="AreaName" />
+          <ScalarProperty Name="ProvinceId" ColumnName="ProvinceId" />
+          <ScalarProperty Name="Province" ColumnName="Province" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="CountyId" ColumnName="CountyId" />
+          <ScalarProperty Name="County" ColumnName="County" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="ypoint" ColumnName="ypoint" />
+          <ScalarProperty Name="DeleteMark" ColumnName="DeleteMark" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateUserId" ColumnName="CreateUserId" />
+          <ScalarProperty Name="CreateUserName" ColumnName="CreateUserName" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="ModifyUserId" ColumnName="ModifyUserId" />
+          <ScalarProperty Name="ModifyUserName" ColumnName="ModifyUserName" />
+          <ScalarProperty Name="htmlContent" ColumnName="htmlContent" />
+          <ScalarProperty Name="xpoint" ColumnName="xpoint" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="StationType" ColumnName="StationType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WM_Company">
+      <EntityTypeMapping TypeName="WaterManageModel.WM_Company">
+        <MappingFragment StoreEntitySet="WM_Company">
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="AreaID" ColumnName="AreaID" />
+          <ScalarProperty Name="AreaName" ColumnName="AreaName" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="SortCode" ColumnName="SortCode" />
+          <ScalarProperty Name="DeleteMark" ColumnName="DeleteMark" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateUserId" ColumnName="CreateUserId" />
+          <ScalarProperty Name="CreateUserName" ColumnName="CreateUserName" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="ModifyUserId" ColumnName="ModifyUserId" />
+          <ScalarProperty Name="ModifyUserName" ColumnName="ModifyUserName" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="StationName" ColumnName="StationName" />
+          <ScalarProperty Name="Province" ColumnName="Province" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="CountyId" ColumnName="CountyId" />
+          <ScalarProperty Name="County" ColumnName="County" />
+          <ScalarProperty Name="ProvinceId" ColumnName="ProvinceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WM_ModulePermission">
+      <EntityTypeMapping TypeName="WaterManageModel.WM_ModulePermission">
+        <MappingFragment StoreEntitySet="WM_ModulePermission">
+          <ScalarProperty Name="ModulePermissionId" ColumnName="ModulePermissionId" />
+          <ScalarProperty Name="ObjectId" ColumnName="ObjectId" />
+          <ScalarProperty Name="ModuleId" ColumnName="ModuleId" />
+          <ScalarProperty Name="SortCode" ColumnName="SortCode" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateUserId" ColumnName="CreateUserId" />
+          <ScalarProperty Name="CreateUserName" ColumnName="CreateUserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WM_Role">
+      <EntityTypeMapping TypeName="WaterManageModel.WM_Role">
+        <MappingFragment StoreEntitySet="WM_Role">
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="SortCode" ColumnName="SortCode" />
+          <ScalarProperty Name="DeleteMark" ColumnName="DeleteMark" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateUserId" ColumnName="CreateUserId" />
+          <ScalarProperty Name="CreateUserName" ColumnName="CreateUserName" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="ModifyUserId" ColumnName="ModifyUserId" />
+          <ScalarProperty Name="ModifyUserName" ColumnName="ModifyUserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WM_User">
+      <EntityTypeMapping TypeName="WaterManageModel.WM_User">
+        <MappingFragment StoreEntitySet="WM_User">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Account" ColumnName="Account" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="LoginStatus" ColumnName="LoginStatus" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="DeleteMark" ColumnName="DeleteMark" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateUserId" ColumnName="CreateUserId" />
+          <ScalarProperty Name="CreateUserName" ColumnName="CreateUserName" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="ModifyUserId" ColumnName="ModifyUserId" />
+          <ScalarProperty Name="ModifyUserName" ColumnName="ModifyUserName" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="DeviceType" ColumnName="DeviceType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WM_UserRoleRelation">
+      <EntityTypeMapping TypeName="WaterManageModel.WM_UserRoleRelation">
+        <MappingFragment StoreEntitySet="WM_UserRoleRelation">
+          <ScalarProperty Name="ObjectUserRelationId" ColumnName="ObjectUserRelationId" />
+          <ScalarProperty Name="ObjectId" ColumnName="ObjectId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="SortCode" ColumnName="SortCode" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateUserId" ColumnName="CreateUserId" />
+          <ScalarProperty Name="CreateUserName" ColumnName="CreateUserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

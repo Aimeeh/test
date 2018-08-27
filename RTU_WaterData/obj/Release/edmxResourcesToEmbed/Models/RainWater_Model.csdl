@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="qjjhModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ST_PPTN_R">
+    <Key>
+      <PropertyRef Name="STCD" />
+      <PropertyRef Name="TM" />
+    </Key>
+    <Property Name="STCD" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="TM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DRP" Type="Decimal" Precision="5" Scale="1" />
+    <Property Name="INTV" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="PDR" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="DYP" Type="Decimal" Precision="5" Scale="1" />
+    <Property Name="WTH" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ST_RIVER_R">
+    <Key>
+      <PropertyRef Name="STCD" />
+      <PropertyRef Name="TM" />
+    </Key>
+    <Property Name="STCD" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="TM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Z" Type="Decimal" Precision="7" Scale="3" />
+    <Property Name="Q" Type="Decimal" Precision="9" Scale="3" />
+    <Property Name="XSA" Type="Decimal" Precision="9" Scale="3" />
+    <Property Name="XSAVV" Type="Decimal" Precision="5" Scale="3" />
+    <Property Name="XSMXV" Type="Decimal" Precision="5" Scale="3" />
+    <Property Name="FLWCHRCD" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="WPTN" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="MSQMT" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="MSAMT" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="MSVMT" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="RDBContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ST_PPTN_R" EntityType="Self.ST_PPTN_R" />
+    <EntitySet Name="ST_RIVER_R" EntityType="Self.ST_RIVER_R" />
+  </EntityContainer>
+</Schema>

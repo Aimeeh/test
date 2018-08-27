@@ -1,0 +1,10 @@
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\Utilities\bin\Release\Utilities.dll
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\Utilities\bin\Release\Utilities.pdb
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\Utilities\bin\Release\HandleModel.exe
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\Utilities\bin\Release\EntityFramework.dll
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\Utilities\bin\Release\HandleModel.pdb
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\Utilities\bin\Release\EntityFramework.xml
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\Utilities\bin\Release\zh-Hans\EntityFramework.resources.dll
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\Utilities\obj\Release\Utilities.csprojResolveAssemblyReference.cache
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\Utilities\obj\Release\Utilities.dll
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\Utilities\obj\Release\Utilities.pdb

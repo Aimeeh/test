@@ -1,0 +1,11 @@
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqDAL\bin\Release\WacqDAL.dll
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqDAL\bin\Release\WacqDAL.pdb
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqDAL\bin\Release\EntityFramework.dll
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqDAL\bin\Release\System.Data.Entity.dll
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqDAL\bin\Release\WacqIDAL.dll
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqDAL\bin\Release\WacqIDAL.pdb
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqDAL\bin\Release\EntityFramework.xml
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqDAL\bin\Release\zh-Hans\EntityFramework.resources.dll
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqDAL\obj\Release\WacqDAL.csprojResolveAssemblyReference.cache
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqDAL\obj\Release\WacqDAL.dll
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqDAL\obj\Release\WacqDAL.pdb

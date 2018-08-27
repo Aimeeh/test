@@ -1,0 +1,12 @@
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\HandleModel\bin\Release\HandleModel.exe.config
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\HandleModel\bin\Release\HandleModel.exe
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\HandleModel\bin\Release\HandleModel.pdb
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\HandleModel\bin\Release\EntityFramework.dll
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\HandleModel\bin\Release\EntityFramework.SqlServer.dll
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\HandleModel\bin\Release\EntityFramework.xml
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\HandleModel\bin\Release\EntityFramework.SqlServer.xml
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\HandleModel\bin\Release\zh-Hans\EntityFramework.resources.dll
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\HandleModel\bin\Release\zh-Hans\EntityFramework.SqlServer.resources.dll
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\HandleModel\obj\Release\HandleModel.csprojResolveAssemblyReference.cache
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\HandleModel\obj\Release\HandleModel.exe
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\HandleModel\obj\Release\HandleModel.pdb

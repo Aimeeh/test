@@ -1,0 +1,14 @@
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqAbsFactory\bin\Release\WacqAbsFactory.dll
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqAbsFactory\bin\Release\WacqAbsFactory.pdb
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqAbsFactory\bin\Release\WacqIBLL.dll
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqAbsFactory\bin\Release\HandleModel.exe
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqAbsFactory\bin\Release\EntityFramework.dll
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqAbsFactory\bin\Release\WacqIBLL.pdb
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqAbsFactory\bin\Release\HandleModel.pdb
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqAbsFactory\bin\Release\EntityFramework.xml
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqAbsFactory\bin\Release\zh-Hans\EntityFramework.resources.dll
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqAbsFactory\obj\Release\WacqAbsFactory.csprojResolveAssemblyReference.cache
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqAbsFactory\obj\Release\WacqAbsFactory.dll
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqAbsFactory\obj\Release\WacqAbsFactory.pdb
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqAbsFactory\bin\Release\Utilities.dll
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqAbsFactory\bin\Release\Utilities.pdb

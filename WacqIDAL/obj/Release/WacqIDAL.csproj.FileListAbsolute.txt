@@ -1,0 +1,5 @@
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqIDAL\bin\Release\WacqIDAL.dll
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqIDAL\bin\Release\WacqIDAL.pdb
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqIDAL\obj\Release\WacqIDAL.csprojResolveAssemblyReference.cache
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqIDAL\obj\Release\WacqIDAL.dll
+E:\zyhRes\项目资料\RTU_WaterData_0601\RTU_WaterData\WacqIDAL\obj\Release\WacqIDAL.pdb

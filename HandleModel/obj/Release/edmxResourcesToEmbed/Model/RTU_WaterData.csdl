@@ -1,0 +1,663 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WaterManageModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="B_UserRoleRelation">
+    <Key>
+      <PropertyRef Name="ObjectUserRelationId" />
+    </Key>
+    <Property Name="ObjectUserRelationId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ObjectId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SortCode" Type="Int32" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="CreateUserId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreateUserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Base_Module">
+    <Key>
+      <PropertyRef Name="ModuleId" />
+    </Key>
+    <Property Name="ModuleId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ParentId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Category" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Icon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Location" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Target" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Level" Type="Int32" />
+    <Property Name="Isexpand" Type="Int32" />
+    <Property Name="AllowButton" Type="Int32" />
+    <Property Name="AllowView" Type="Int32" />
+    <Property Name="AllowForm" Type="Int32" />
+    <Property Name="Authority" Type="Int32" />
+    <Property Name="DataScope" Type="Int32" />
+    <Property Name="Remark" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Enabled" Type="Int32" />
+    <Property Name="SortCode" Type="Int32" />
+    <Property Name="DeleteMark" Type="Int32" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="CreateUserId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreateUserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifyUserId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ModifyUserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Base_ProvinceCity">
+    <Key>
+      <PropertyRef Name="ProvinceCityId" />
+    </Key>
+    <Property Name="ProvinceCityId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ParentId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Category" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Enabled" Type="Int32" />
+    <Property Name="SortCode" Type="Int32" />
+    <Property Name="DeleteMark" Type="Int32" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="CreateUserId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreateUserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifyUserId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ModifyUserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="CityInfo">
+    <Key>
+      <PropertyRef Name="CityID" />
+    </Key>
+    <Property Name="CityID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProID" Type="Int32" />
+    <Property Name="CityName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Longitude" Type="Double" />
+    <Property Name="Latitude" Type="Double" />
+    <Property Name="xPos" Type="Double" />
+    <Property Name="yPos" Type="Double" />
+  </EntityType>
+  <EntityType Name="ConfigParameter">
+    <Key>
+      <PropertyRef Name="CPId" />
+    </Key>
+    <Property Name="CPId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StationID" Type="Int32" Nullable="false" />
+    <Property Name="Origin" Type="Double" />
+    <Property Name="SoundverCount" Type="Int32" />
+    <Property Name="HSpeedverCount" Type="Int32" />
+    <Property Name="MSpeedverCount" Type="Int32" />
+    <Property Name="LSpeedverCount" Type="Int32" />
+    <Property Name="LeftDistance" Type="Double" />
+    <Property Name="RightDistance" Type="Double" />
+    <Property Name="LLeftCft" Type="Double" />
+    <Property Name="MLeftCft" Type="Double" />
+    <Property Name="HLeftCft" Type="Double" />
+    <Property Name="LRightCft" Type="Double" />
+    <Property Name="MRightCft" Type="Double" />
+    <Property Name="HRightCft" Type="Double" />
+    <Property Name="BottomElevWaterGau" Type="Double" />
+    <Property Name="TopElevWaterGau" Type="Double" />
+    <Property Name="RiverBottEle" Type="Double" />
+    <Property Name="GasgaugeParameter1" Type="Double" />
+    <Property Name="GasgaugeParameter2" Type="Double" />
+    <Property Name="FloatgaugeParameter1" Type="Double" />
+    <Property Name="FloatgaugeParameter2" Type="Double" />
+    <Property Name="RopewayLength" Type="Double" />
+    <Property Name="StartDistance" Type="Double" />
+    <Property Name="LargeSecDepth" Type="Double" />
+    <Property Name="BaseWaterLevel" Type="Double" />
+    <Property Name="StopWaterLev" Type="Double" />
+    <Property Name="StopTemperature" Type="Double" />
+    <Property Name="WarnWaterValue" Type="Double" />
+    <Property Name="WarnFlowValue" Type="Double" />
+    <Property Name="WarnVelValue" Type="Double" />
+    <Property Name="SentState" Type="Byte" />
+    <Property Name="RevTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="CorrectionFactor">
+    <Key>
+      <PropertyRef Name="CFId" />
+    </Key>
+    <Property Name="CFId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StationID" Type="Int32" Nullable="false" />
+    <Property Name="RainCorrFactorA" Type="Double" />
+    <Property Name="RainCorrFactorB" Type="Double" />
+    <Property Name="SediCorrFactorA" Type="Double" />
+    <Property Name="SediCorrFactorB" Type="Double" />
+    <Property Name="evaUpperlimit" Type="Int32" />
+    <Property Name="evaLowerlimit" Type="Int32" />
+    <Property Name="WStartTime" Type="DateTime" Precision="3" />
+    <Property Name="WEndTime" Type="DateTime" Precision="3" />
+    <Property Name="EvaMiddValue" Type="Double" />
+    <Property Name="EvaWeight" Type="Double" />
+    <Property Name="LTempLimit" Type="Double" />
+  </EntityType>
+  <EntityType Name="CountryInfo">
+    <Key>
+      <PropertyRef Name="CouID" />
+    </Key>
+    <Property Name="CouID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CouName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="CityID" Type="Int32" />
+    <Property Name="Longitude" Type="Double" />
+    <Property Name="Latitude" Type="Double" />
+    <Property Name="xPos" Type="Double" />
+    <Property Name="yPos" Type="Double" />
+  </EntityType>
+  <EntityType Name="EvaporationData">
+    <Key>
+      <PropertyRef Name="EvaId" />
+    </Key>
+    <Property Name="EvaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StationID" Type="Int32" Nullable="false" />
+    <Property Name="EvaData" Type="Double" />
+    <Property Name="State" Type="Byte" />
+    <Property Name="ReceiveTime" Type="DateTime" Precision="3" />
+    <Property Name="TestTime" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="FlowParArea">
+    <Key>
+      <PropertyRef Name="FpaId" />
+    </Key>
+    <Property Name="FpaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StationID" Type="Int32" Nullable="false" />
+    <Property Name="FlowData" Type="Double" />
+    <Property Name="PartArea" Type="Double" />
+    <Property Name="CorrFactor" Type="Double" />
+    <Property Name="FTId" Type="Int32" Nullable="false" />
+    <Property Name="RevTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PartDepth" Type="Double" />
+    <Property Name="PMeanDepth" Type="Double" />
+    <Property Name="PartVelocity" Type="Double" />
+    <Property Name="PMeanVelocity" Type="Double" />
+  </EntityType>
+  <EntityType Name="FlowTable">
+    <Key>
+      <PropertyRef Name="FTId" />
+    </Key>
+    <Property Name="FTId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StationID" Type="Int32" />
+    <Property Name="FTestStartTime" Type="DateTime" Precision="3" />
+    <Property Name="FTestEndTime" Type="DateTime" Precision="3" />
+    <Property Name="StartwaterLev" Type="Double" />
+    <Property Name="EndwaterLev" Type="Double" />
+    <Property Name="WaterWidth" Type="Double" />
+    <Property Name="FlowValue" Type="Double" />
+    <Property Name="WaterModel" Type="Int32" />
+    <Property Name="SpeedverCount" Type="Int32" />
+    <Property Name="SecArea" Type="Double" />
+    <Property Name="MeanDepth" Type="Double" />
+    <Property Name="MaxDepth" Type="Double" />
+    <Property Name="MeanVelocity" Type="Double" />
+    <Property Name="MaxVelocity" Type="Double" />
+    <Property Name="CPId" Type="Int32" Nullable="false" />
+    <Property Name="RevTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="HandleLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StationId" Type="Int32" />
+    <Property Name="Account" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LogContent" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="HandleTime" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="hydStation">
+    <Key>
+      <PropertyRef Name="StationID" />
+    </Key>
+    <Property Name="SID" Type="Int32" Nullable="false" />
+    <Property Name="StationID" Type="Int32" Nullable="false" />
+    <Property Name="StationName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="StationType" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CouID" Type="Int32" />
+    <Property Name="Longitude" Type="Decimal" Precision="18" Scale="6" />
+    <Property Name="Latitude" Type="Decimal" Precision="18" Scale="6" />
+    <Property Name="RiverWay" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Basin" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Voltage" Type="Double" />
+    <Property Name="RTUVoltage" Type="Double" />
+    <Property Name="RTUVoltage2" Type="Double" />
+    <Property Name="AddTime" Type="DateTime" Precision="3" />
+    <Property Name="Onlinestate" Type="Byte" />
+    <Property Name="OnlineTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Province" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CityId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CountyId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="County" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Remark" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Enabled" Type="Int32" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="CreateUserId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreateUserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ProvinceId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DeleteMark" Type="Int32" />
+    <Property Name="KCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="StationID_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="WarnPhoneNum" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DeviceType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="C_DeviceType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ManualTestTable">
+    <Key>
+      <PropertyRef Name="MTId" />
+    </Key>
+    <Property Name="MTId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StationID" Type="Int32" Nullable="false" />
+    <Property Name="MTTestTime" Type="DateTime" Precision="3" />
+    <Property Name="WaterLevalue" Type="Double" />
+    <Property Name="Flow" Type="Double" />
+    <Property Name="DataType" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ManVelData">
+    <Key>
+      <PropertyRef Name="MvdId" />
+    </Key>
+    <Property Name="MvdId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StationID" Type="Int32" />
+    <Property Name="DataOrder" Type="Int32" />
+    <Property Name="VerData" Type="Double" />
+  </EntityType>
+  <EntityType Name="MeasuredParameter">
+    <Key>
+      <PropertyRef Name="MPId" />
+    </Key>
+    <Property Name="MPId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StationID" Type="Int32" />
+    <Property Name="HWaterValue" Type="Double" />
+    <Property Name="HWaterMInterval" Type="Double" />
+    <Property Name="HwaterFluctMeasure" Type="Double" />
+    <Property Name="MWaterValue" Type="Double" />
+    <Property Name="MWaterMInterval" Type="Double" />
+    <Property Name="MwaterFluctMeasure" Type="Double" />
+    <Property Name="LWaterMInterval" Type="Double" />
+    <Property Name="LwaterFluctMeasure" Type="Double" />
+    <Property Name="OffsetDistance" Type="Double" />
+    <Property Name="WarnWaterValue" Type="Double" />
+    <Property Name="WarnFlowValue" Type="Double" />
+    <Property Name="WarnVelValue" Type="Double" />
+    <Property Name="CPId" Type="Int32" Nullable="false" />
+    <Property Name="RevTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="MeasureRecord">
+    <Key>
+      <PropertyRef Name="MMId" />
+    </Key>
+    <Property Name="MMId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StationID" Type="Int32" />
+    <Property Name="MeasureMark" Type="Int32" />
+    <Property Name="TypeMark" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ReceiveBackMark" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="VerticalMark" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="SetOutMark" Type="Int32" />
+    <Property Name="ReachZeroMark" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CompletedMark" Type="Int32" />
+    <Property Name="TimeOut" Type="DateTime" Precision="3" />
+    <Property Name="FailMark" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HandleAccount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VolatMark" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DataContent" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="MinuFlowRate">
+    <Key>
+      <PropertyRef Name="MFRId" />
+    </Key>
+    <Property Name="MFRId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StationID" Type="Int32" Nullable="false" />
+    <Property Name="FlowRateData" Type="Double" />
+    <Property Name="Voltage" Type="Double" />
+    <Property Name="Discharge" Type="Double" />
+    <Property Name="RecTime" Type="DateTime" Precision="3" />
+    <Property Name="TestTime" Type="DateTime" Precision="3" />
+    <Property Name="Remarks" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CarVoltage" Type="Double" />
+  </EntityType>
+  <EntityType Name="NSY_RTRUN">
+    <Key>
+      <PropertyRef Name="STCD" />
+      <PropertyRef Name="DATATYPE" />
+      <PropertyRef Name="TM" />
+    </Key>
+    <Property Name="STCD" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="DATATYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DA" Type="Decimal" Precision="10" Scale="3" />
+    <Property Name="DP" Type="Decimal" Precision="10" Scale="3" />
+    <Property Name="DI" Type="Decimal" Precision="10" Scale="3" Nullable="false" />
+    <Property Name="PDR" Type="Decimal" Precision="10" Scale="3" />
+    <Property Name="DQ" Type="Decimal" Precision="10" Scale="3" />
+    <Property Name="DV" Type="Decimal" Precision="10" Scale="3" />
+    <Property Name="INSERTTM" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="OriginalData">
+    <Key>
+      <PropertyRef Name="OId" />
+    </Key>
+    <Property Name="OId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StationID" Type="Int32" Nullable="false" />
+    <Property Name="Data" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Name="ReceiveTime" Type="DateTime" Precision="3" />
+    <Property Name="TransType" Type="Byte" />
+  </EntityType>
+  <EntityType Name="ProvinceInfo">
+    <Key>
+      <PropertyRef Name="ProID" />
+    </Key>
+    <Property Name="ProID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Longitute" Type="Double" />
+    <Property Name="Latitude" Type="Double" />
+    <Property Name="xPos" Type="Int32" />
+    <Property Name="yPos" Type="Int32" />
+  </EntityType>
+  <EntityType Name="RadRainfalldata">
+    <Key>
+      <PropertyRef Name="RRId" />
+    </Key>
+    <Property Name="RRId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StationID" Type="Int32" Nullable="false" />
+    <Property Name="RRTestTime" Type="DateTime" Precision="3" />
+    <Property Name="RRData1" Type="Double" />
+    <Property Name="RRData3" Type="Double" />
+    <Property Name="RRData2" Type="Double" />
+    <Property Name="RRData4" Type="Double" />
+    <Property Name="RRData5" Type="Double" />
+    <Property Name="RRData6" Type="Double" />
+    <Property Name="RRData7" Type="Double" />
+    <Property Name="RRData8" Type="Double" />
+    <Property Name="RRData9" Type="Double" />
+    <Property Name="RRData10" Type="Double" />
+    <Property Name="RRData11" Type="Double" />
+    <Property Name="RRData12" Type="Double" />
+  </EntityType>
+  <EntityType Name="RainfallData">
+    <Key>
+      <PropertyRef Name="RId" />
+    </Key>
+    <Property Name="RId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StationID" Type="Int32" Nullable="false" />
+    <Property Name="RainfallData1" Type="Double" />
+    <Property Name="RainfallData2" Type="Double" />
+    <Property Name="RainfallData3" Type="Double" />
+    <Property Name="RainfallData4" Type="Double" />
+    <Property Name="RainfallData5" Type="Double" />
+    <Property Name="RainfallData6" Type="Double" />
+    <Property Name="RainfallData7" Type="Double" />
+    <Property Name="RainfallData8" Type="Double" />
+    <Property Name="RainfallData9" Type="Double" />
+    <Property Name="RainfallData10" Type="Double" />
+    <Property Name="RainfallData11" Type="Double" />
+    <Property Name="RainfallData12" Type="Double" />
+    <Property Name="TotalRain" Type="Double" />
+    <Property Name="Temperature" Type="Double" />
+    <Property Name="State" Type="Byte" />
+    <Property Name="PacketType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ReceiveTime" Type="DateTime" Precision="3" />
+    <Property Name="TestTime" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="RTUTestPlan">
+    <Key>
+      <PropertyRef Name="TPId" />
+    </Key>
+    <Property Name="TPId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StationID" Type="Int32" Nullable="false" />
+    <Property Name="LWTestPlan" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MWTestPlan" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="HWTestPlan" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CPId" Type="Int32" Nullable="false" />
+    <Property Name="SendState" Type="Byte" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SedimentData">
+    <Key>
+      <PropertyRef Name="SeId" />
+    </Key>
+    <Property Name="SeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StationID" Type="Int32" Nullable="false" />
+    <Property Name="SedimentData1" Type="Double" />
+    <Property Name="SedimentData2" Type="Double" />
+    <Property Name="SedimentData3" Type="Double" />
+    <Property Name="SedimentData4" Type="Double" />
+    <Property Name="SedimentData5" Type="Double" />
+    <Property Name="SedimentData6" Type="Double" />
+    <Property Name="SedimentData7" Type="Double" />
+    <Property Name="SedimentData8" Type="Double" />
+    <Property Name="SedimentData9" Type="Double" />
+    <Property Name="SedimentData10" Type="Double" />
+    <Property Name="SedimentData11" Type="Double" />
+    <Property Name="SedimentData12" Type="Double" />
+    <Property Name="State" Type="Byte" />
+    <Property Name="PacketType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ReceiveTime" Type="DateTime" Precision="3" />
+    <Property Name="TestTime" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="SoundverData">
+    <Key>
+      <PropertyRef Name="SvdId" />
+    </Key>
+    <Property Name="SvdId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StationID" Type="Int32" Nullable="false" />
+    <Property Name="DataOrder" Type="Int32" />
+    <Property Name="StartDistL" Type="Double" />
+    <Property Name="VerData" Type="Double" />
+    <Property Name="CPId" Type="Int32" Nullable="false" />
+    <Property Name="RevTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TestRecord" Type="Int32" />
+  </EntityType>
+  <EntityType Name="SpeedData">
+    <Key>
+      <PropertyRef Name="SdId" />
+    </Key>
+    <Property Name="SdId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StationID" Type="Int32" />
+    <Property Name="DataOrder" Type="Int32" />
+    <Property Name="StartDistV" Type="Double" />
+    <Property Name="RiverElva" Type="Double" />
+    <Property Name="CorrecFactor" Type="Double" />
+    <Property Name="HCoeff" Type="Double" />
+    <Property Name="MCoeff" Type="Double" />
+    <Property Name="LCoeff" Type="Double" />
+    <Property Name="HCoeffA" Type="Double" />
+    <Property Name="HCoeffB" Type="Double" />
+    <Property Name="MCoeffA" Type="Double" />
+    <Property Name="MCoeffB" Type="Double" />
+    <Property Name="LCoeffA" Type="Double" />
+    <Property Name="LCoeffB" Type="Double" />
+    <Property Name="DataType" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CPId" Type="Int32" Nullable="false" />
+    <Property Name="RevTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UpdateRecord">
+    <Key>
+      <PropertyRef Name="UDId" />
+    </Key>
+    <Property Name="UDId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StationID" Type="Int32" />
+    <Property Name="StationName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdateMark" Type="Int32" />
+    <Property Name="FilePath" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="FilePathB" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ResponseMark" Type="Int32" />
+    <Property Name="CompletedMark" Type="Int32" />
+    <Property Name="Argement" Type="Int32" />
+    <Property Name="SerialNumber" Type="Int32" />
+    <Property Name="TypeMark" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DeviceType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="WaterLevData">
+    <Key>
+      <PropertyRef Name="WLId" />
+    </Key>
+    <Property Name="WLId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StationID" Type="Int32" />
+    <Property Name="TestTime" Type="DateTime" Precision="3" />
+    <Property Name="WLData1" Type="Double" />
+    <Property Name="WLData2" Type="Double" />
+    <Property Name="WLData3" Type="Double" />
+    <Property Name="WLData4" Type="Double" />
+    <Property Name="WLData5" Type="Double" />
+    <Property Name="WLData6" Type="Double" />
+    <Property Name="WLData7" Type="Double" />
+    <Property Name="WLData8" Type="Double" />
+    <Property Name="WLData9" Type="Double" />
+    <Property Name="WLData10" Type="Double" />
+    <Property Name="WLData11" Type="Double" />
+    <Property Name="WLData12" Type="Double" />
+    <Property Name="TotalData" Type="Double" />
+    <Property Name="DataType" Type="Byte" />
+    <Property Name="RevTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="WM_Area">
+    <Key>
+      <PropertyRef Name="AreaID" />
+    </Key>
+    <Property Name="AreaID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AreaName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ProvinceId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Province" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CityId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CountyId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="County" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Remark" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Enabled" Type="Int32" />
+    <Property Name="ypoint" Type="Int32" />
+    <Property Name="DeleteMark" Type="Int32" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="CreateUserId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreateUserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifyUserId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ModifyUserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="htmlContent" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="xpoint" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="StationID" Type="Int32" />
+    <Property Name="StationType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="WM_Company">
+    <Key>
+      <PropertyRef Name="CompanyId" />
+    </Key>
+    <Property Name="CompanyId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ParentId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Tel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AreaID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AreaName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Remark" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Enabled" Type="Int32" />
+    <Property Name="SortCode" Type="Int32" />
+    <Property Name="DeleteMark" Type="Int32" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="CreateUserId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreateUserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifyUserId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ModifyUserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="StationID" Type="Int32" />
+    <Property Name="StationName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Province" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CityId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CountyId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="County" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ProvinceId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="WM_ModulePermission">
+    <Key>
+      <PropertyRef Name="ModulePermissionId" />
+    </Key>
+    <Property Name="ModulePermissionId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ObjectId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ModuleId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SortCode" Type="Int32" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="CreateUserId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreateUserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="WM_Role">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="RoleID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Remark" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Enabled" Type="Int32" />
+    <Property Name="SortCode" Type="Int32" />
+    <Property Name="DeleteMark" Type="Int32" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="CreateUserId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreateUserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifyUserId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ModifyUserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="WM_User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Account" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Tel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LoginStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CompanyID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CompanyName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DeleteMark" Type="Int32" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="CreateUserId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreateUserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifyUserId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ModifyUserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Remark" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Enabled" Type="Int32" />
+    <Property Name="DeviceType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="WM_UserRoleRelation">
+    <Key>
+      <PropertyRef Name="ObjectUserRelationId" />
+    </Key>
+    <Property Name="ObjectUserRelationId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ObjectId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SortCode" Type="Int32" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="CreateUserId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreateUserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="RWEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="B_UserRoleRelation" EntityType="Self.B_UserRoleRelation" />
+    <EntitySet Name="Base_Module" EntityType="Self.Base_Module" />
+    <EntitySet Name="Base_ProvinceCity" EntityType="Self.Base_ProvinceCity" />
+    <EntitySet Name="CityInfo" EntityType="Self.CityInfo" />
+    <EntitySet Name="ConfigParameter" EntityType="Self.ConfigParameter" />
+    <EntitySet Name="CorrectionFactor" EntityType="Self.CorrectionFactor" />
+    <EntitySet Name="CountryInfo" EntityType="Self.CountryInfo" />
+    <EntitySet Name="EvaporationData" EntityType="Self.EvaporationData" />
+    <EntitySet Name="FlowParArea" EntityType="Self.FlowParArea" />
+    <EntitySet Name="FlowTable" EntityType="Self.FlowTable" />
+    <EntitySet Name="HandleLog" EntityType="Self.HandleLog" />
+    <EntitySet Name="hydStation" EntityType="Self.hydStation" />
+    <EntitySet Name="ManualTestTable" EntityType="Self.ManualTestTable" />
+    <EntitySet Name="ManVelData" EntityType="Self.ManVelData" />
+    <EntitySet Name="MeasuredParameter" EntityType="Self.MeasuredParameter" />
+    <EntitySet Name="MeasureRecord" EntityType="Self.MeasureRecord" />
+    <EntitySet Name="MinuFlowRate" EntityType="Self.MinuFlowRate" />
+    <EntitySet Name="NSY_RTRUN" EntityType="Self.NSY_RTRUN" />
+    <EntitySet Name="OriginalData" EntityType="Self.OriginalData" />
+    <EntitySet Name="ProvinceInfo" EntityType="Self.ProvinceInfo" />
+    <EntitySet Name="RadRainfalldata" EntityType="Self.RadRainfalldata" />
+    <EntitySet Name="RainfallData" EntityType="Self.RainfallData" />
+    <EntitySet Name="RTUTestPlan" EntityType="Self.RTUTestPlan" />
+    <EntitySet Name="SedimentData" EntityType="Self.SedimentData" />
+    <EntitySet Name="SoundverData" EntityType="Self.SoundverData" />
+    <EntitySet Name="SpeedData" EntityType="Self.SpeedData" />
+    <EntitySet Name="UpdateRecord" EntityType="Self.UpdateRecord" />
+    <EntitySet Name="WaterLevData" EntityType="Self.WaterLevData" />
+    <EntitySet Name="WM_Area" EntityType="Self.WM_Area" />
+    <EntitySet Name="WM_Company" EntityType="Self.WM_Company" />
+    <EntitySet Name="WM_ModulePermission" EntityType="Self.WM_ModulePermission" />
+    <EntitySet Name="WM_Role" EntityType="Self.WM_Role" />
+    <EntitySet Name="WM_User" EntityType="Self.WM_User" />
+    <EntitySet Name="WM_UserRoleRelation" EntityType="Self.WM_UserRoleRelation" />
+  </EntityContainer>
+</Schema>

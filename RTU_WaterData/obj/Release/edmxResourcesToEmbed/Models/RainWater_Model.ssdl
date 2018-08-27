@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="qjjhModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ST_PPTN_R">
+    <Key>
+      <PropertyRef Name="STCD" />
+      <PropertyRef Name="TM" />
+    </Key>
+    <Property Name="STCD" Type="char" MaxLength="8" Nullable="false" />
+    <Property Name="TM" Type="datetime" Nullable="false" />
+    <Property Name="DRP" Type="numeric" Precision="5" Scale="1" />
+    <Property Name="INTV" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="PDR" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="DYP" Type="numeric" Precision="5" Scale="1" />
+    <Property Name="WTH" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="ST_RIVER_R">
+    <Key>
+      <PropertyRef Name="STCD" />
+      <PropertyRef Name="TM" />
+    </Key>
+    <Property Name="STCD" Type="char" MaxLength="8" Nullable="false" />
+    <Property Name="TM" Type="datetime" Nullable="false" />
+    <Property Name="Z" Type="numeric" Precision="7" Scale="3" />
+    <Property Name="Q" Type="numeric" Precision="9" Scale="3" />
+    <Property Name="XSA" Type="numeric" Precision="9" Scale="3" />
+    <Property Name="XSAVV" Type="numeric" Precision="5" Scale="3" />
+    <Property Name="XSMXV" Type="numeric" Precision="5" Scale="3" />
+    <Property Name="FLWCHRCD" Type="char" MaxLength="1" />
+    <Property Name="WPTN" Type="char" MaxLength="1" />
+    <Property Name="MSQMT" Type="char" MaxLength="1" />
+    <Property Name="MSAMT" Type="char" MaxLength="1" />
+    <Property Name="MSVMT" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityContainer Name="qjjhModelStoreContainer">
+    <EntitySet Name="ST_PPTN_R" EntityType="Self.ST_PPTN_R" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ST_RIVER_R" EntityType="Self.ST_RIVER_R" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

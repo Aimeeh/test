@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="qjjhModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ST_PPTN_R">
+          <Key>
+            <PropertyRef Name="STCD" />
+            <PropertyRef Name="TM" />
+          </Key>
+          <Property Name="STCD" Type="char" MaxLength="8" Nullable="false" />
+          <Property Name="TM" Type="datetime" Nullable="false" />
+          <Property Name="DRP" Type="numeric" Precision="5" Scale="1" />
+          <Property Name="INTV" Type="numeric" Precision="5" Scale="2" />
+          <Property Name="PDR" Type="numeric" Precision="5" Scale="2" />
+          <Property Name="DYP" Type="numeric" Precision="5" Scale="1" />
+          <Property Name="WTH" Type="char" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="ST_RIVER_R">
+          <Key>
+            <PropertyRef Name="STCD" />
+            <PropertyRef Name="TM" />
+          </Key>
+          <Property Name="STCD" Type="char" MaxLength="8" Nullable="false" />
+          <Property Name="TM" Type="datetime" Nullable="false" />
+          <Property Name="Z" Type="numeric" Precision="7" Scale="3" />
+          <Property Name="Q" Type="numeric" Precision="9" Scale="3" />
+          <Property Name="XSA" Type="numeric" Precision="9" Scale="3" />
+          <Property Name="XSAVV" Type="numeric" Precision="5" Scale="3" />
+          <Property Name="XSMXV" Type="numeric" Precision="5" Scale="3" />
+          <Property Name="FLWCHRCD" Type="char" MaxLength="1" />
+          <Property Name="WPTN" Type="char" MaxLength="1" />
+          <Property Name="MSQMT" Type="char" MaxLength="1" />
+          <Property Name="MSAMT" Type="char" MaxLength="1" />
+          <Property Name="MSVMT" Type="char" MaxLength="1" />
+        </EntityType>
+        <EntityContainer Name="qjjhModelStoreContainer">
+          <EntitySet Name="ST_PPTN_R" EntityType="Self.ST_PPTN_R" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ST_RIVER_R" EntityType="Self.ST_RIVER_R" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="qjjhModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ST_PPTN_R">
+          <Key>
+            <PropertyRef Name="STCD" />
+            <PropertyRef Name="TM" />
+          </Key>
+          <Property Name="STCD" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="TM" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DRP" Type="Decimal" Precision="5" Scale="1" />
+          <Property Name="INTV" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="PDR" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="DYP" Type="Decimal" Precision="5" Scale="1" />
+          <Property Name="WTH" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ST_RIVER_R">
+          <Key>
+            <PropertyRef Name="STCD" />
+            <PropertyRef Name="TM" />
+          </Key>
+          <Property Name="STCD" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="TM" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Z" Type="Decimal" Precision="7" Scale="3" />
+          <Property Name="Q" Type="Decimal" Precision="9" Scale="3" />
+          <Property Name="XSA" Type="Decimal" Precision="9" Scale="3" />
+          <Property Name="XSAVV" Type="Decimal" Precision="5" Scale="3" />
+          <Property Name="XSMXV" Type="Decimal" Precision="5" Scale="3" />
+          <Property Name="FLWCHRCD" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="WPTN" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="MSQMT" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="MSAMT" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="MSVMT" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="RDBContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ST_PPTN_R" EntityType="Self.ST_PPTN_R" />
+          <EntitySet Name="ST_RIVER_R" EntityType="Self.ST_RIVER_R" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="qjjhModelStoreContainer" CdmEntityContainer="RDBContext">
+          <EntitySetMapping Name="ST_PPTN_R">
+            <EntityTypeMapping TypeName="qjjhModel.ST_PPTN_R">
+              <MappingFragment StoreEntitySet="ST_PPTN_R">
+                <ScalarProperty Name="STCD" ColumnName="STCD" />
+                <ScalarProperty Name="TM" ColumnName="TM" />
+                <ScalarProperty Name="DRP" ColumnName="DRP" />
+                <ScalarProperty Name="INTV" ColumnName="INTV" />
+                <ScalarProperty Name="PDR" ColumnName="PDR" />
+                <ScalarProperty Name="DYP" ColumnName="DYP" />
+                <ScalarProperty Name="WTH" ColumnName="WTH" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ST_RIVER_R">
+            <EntityTypeMapping TypeName="qjjhModel.ST_RIVER_R">
+              <MappingFragment StoreEntitySet="ST_RIVER_R">
+                <ScalarProperty Name="STCD" ColumnName="STCD" />
+                <ScalarProperty Name="TM" ColumnName="TM" />
+                <ScalarProperty Name="Z" ColumnName="Z" />
+                <ScalarProperty Name="Q" ColumnName="Q" />
+                <ScalarProperty Name="XSA" ColumnName="XSA" />
+                <ScalarProperty Name="XSAVV" ColumnName="XSAVV" />
+                <ScalarProperty Name="XSMXV" ColumnName="XSMXV" />
+                <ScalarProperty Name="FLWCHRCD" ColumnName="FLWCHRCD" />
+                <ScalarProperty Name="WPTN" ColumnName="WPTN" />
+                <ScalarProperty Name="MSQMT" ColumnName="MSQMT" />
+                <ScalarProperty Name="MSAMT" ColumnName="MSAMT" />
+                <ScalarProperty Name="MSVMT" ColumnName="MSVMT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,123 @@
+﻿.a-ca-head-title {
+    border-right: solid 1px #e5e5e5;
+    background-color: white;
+    padding: 0 !important;
+    border-left: solid 1px #e5e5e5;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table th {
+    padding: 10px;
+    font-weight: 500;
+}
+
+table td {
+    padding: 5px;
+}
+
+.a-ca-table {
+    border: solid 1px #e5e5e5;
+    margin: 10px 0px 0px 20px;
+    width: 65.2%;
+}
+
+.a-ca-table tbody tr td {
+    border: solid 1px #e5e5e5;
+    text-align: center;
+}
+
+.a-ca-ht-div {
+    background-image: url(./xiexian.png);
+    background-size: 100% 100%;
+}
+
+.a-ca-t-week {
+    border-bottom: solid 1px #e5e5e5;
+    border-top: solid 1px #e5e5e5;
+}
+
+.head {
+    margin: 10px 0px 0px 20px;
+    border: solid 1px #e5e5e5;
+    width: 68.9%;
+    float: left;
+}
+
+.head-content-div {
+    height: 1.9rem;
+    line-height: 1.9rem;
+}
+
+.own {
+    border-top: solid 1px #e5e5e5;
+}
+
+.a-cat-td-name {
+    height: 2rem;
+}
+
+.out {
+    border-top: 9em #fafcfd solid; /*上边框宽度等于表格第一行行高*/
+    border-left: 130px #bfbcba solid; /*左边框宽度等于表格第一行第一格宽度*/
+    position: relative; /*让里面的两个子容器绝对定位*/
+    color: black;
+    height: 100;
+}
+
+.midemo {
+    border-bottom: solid 1px #e5e5e5;
+    width: 137%;
+    height: 234%;
+    float: right;
+    margin-right: -5px;
+}
+
+.a-cat-span-text {
+    position: absolute;
+    margin-left: -13px;
+    margin-top: 3.5rem;
+}
+
+b {
+    font-style: normal;
+    display: block;
+    position: absolute;
+    top: -7.3em;
+    left: -145px;
+    width: 200px;
+    font-weight: 300;
+}
+
+em {
+    font-style: normal;
+    display: block;
+    position: absolute;
+    /*top: -78px;  */
+    left: -160px;
+    width: 200px;
+}
+.btnExcelOut {
+    padding: 0 15px;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 6px;
+    border: 1px solid #A8A8A8;
+    background: url('../../Images/btn_bg.gif') repeat-x;
+    cursor: pointer;
+    vertical-align: middle;
+    overflow: hidden;
+    margin-top: 2px;
+    width: 3%;
+    float: left;
+    margin-left: 60rem;
+    margin-bottom: 1rem;
+}
+.btnExcelOut a {
+text-decoration: none;
+color: black;
+margin-left:17%;
+}

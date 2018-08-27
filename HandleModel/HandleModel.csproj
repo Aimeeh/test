@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{512E97B5-6D5A-4935-BE11-551F060382C5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HandleModel</RootNamespace>
+    <AssemblyName>HandleModel</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\Base_Module.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Base_ProvinceCity.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\B_UserRoleRelation.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CityInfo.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ConfigParameter.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CorrectionFactor.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CountryInfo.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EvaporationData.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FlowParArea.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FlowTable.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\HandleLog.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\hydStation.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ManualTestTable.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ManVelData.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MeasuredParameter.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MeasureRecord.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MinuFlowRate.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\NSY_RTRUN.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\OriginalData.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ProvinceInfo.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RadRainfalldata.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RainfallData.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RTUTestPlan.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RTU_WaterData.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RTU_WaterData.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RTU_WaterData.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RTU_WaterData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RTU_WaterData.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SedimentData.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SoundverData.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpeedData.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UpdateRecord.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\WaterLevData.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\WM_Area.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\WM_Company.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\WM_ModulePermission.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\WM_Role.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\WM_User.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\WM_UserRoleRelation.cs">
+      <DependentUpon>RTU_WaterData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EntityDeploy Include="Model\RTU_WaterData.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>RTU_WaterData.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model\RTU_WaterData.edmx.diagram">
+      <DependentUpon>RTU_WaterData.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\RTU_WaterData.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RTU_WaterData.edmx</DependentUpon>
+      <LastGenOutput>RTU_WaterData.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\RTU_WaterData.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RTU_WaterData.edmx</DependentUpon>
+      <LastGenOutput>RTU_WaterData.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

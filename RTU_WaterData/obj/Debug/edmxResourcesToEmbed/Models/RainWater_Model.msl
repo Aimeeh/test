@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="qjjhModelStoreContainer" CdmEntityContainer="RDBContext">
+    <EntitySetMapping Name="ST_PPTN_R">
+      <EntityTypeMapping TypeName="qjjhModel.ST_PPTN_R">
+        <MappingFragment StoreEntitySet="ST_PPTN_R">
+          <ScalarProperty Name="STCD" ColumnName="STCD" />
+          <ScalarProperty Name="TM" ColumnName="TM" />
+          <ScalarProperty Name="DRP" ColumnName="DRP" />
+          <ScalarProperty Name="INTV" ColumnName="INTV" />
+          <ScalarProperty Name="PDR" ColumnName="PDR" />
+          <ScalarProperty Name="DYP" ColumnName="DYP" />
+          <ScalarProperty Name="WTH" ColumnName="WTH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ST_RIVER_R">
+      <EntityTypeMapping TypeName="qjjhModel.ST_RIVER_R">
+        <MappingFragment StoreEntitySet="ST_RIVER_R">
+          <ScalarProperty Name="STCD" ColumnName="STCD" />
+          <ScalarProperty Name="TM" ColumnName="TM" />
+          <ScalarProperty Name="Z" ColumnName="Z" />
+          <ScalarProperty Name="Q" ColumnName="Q" />
+          <ScalarProperty Name="XSA" ColumnName="XSA" />
+          <ScalarProperty Name="XSAVV" ColumnName="XSAVV" />
+          <ScalarProperty Name="XSMXV" ColumnName="XSMXV" />
+          <ScalarProperty Name="FLWCHRCD" ColumnName="FLWCHRCD" />
+          <ScalarProperty Name="WPTN" ColumnName="WPTN" />
+          <ScalarProperty Name="MSQMT" ColumnName="MSQMT" />
+          <ScalarProperty Name="MSAMT" ColumnName="MSAMT" />
+          <ScalarProperty Name="MSVMT" ColumnName="MSVMT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
